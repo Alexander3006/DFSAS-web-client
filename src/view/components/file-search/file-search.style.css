@@ -1,0 +1,52 @@
+#file-search {    
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    justify-content: start;
+}
+
+#file-search > div {
+    margin: 0.5rem;
+}
+
+#file-search-header {
+    justify-content: center;
+    text-align: center;
+}
+
+#file-search-params {
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+#file-search-params > div {
+    margin: 0.5rem;
+}
+
+#file-search-files {
+    border: 1px solid black;
+    border-radius: 1rem;
+    
+    padding: 1rem;
+
+    min-height: 10rem;
+    max-height: 10rem;
+    overflow-x: scroll;
+    flex-wrap: nowrap; /*override*/
+}
+
+#file-search .flex-raw-container {
+    margin-top: 1rem;
+}
+
+#file-search-files::-webkit-scrollbar {
+    width: 0px;
+}

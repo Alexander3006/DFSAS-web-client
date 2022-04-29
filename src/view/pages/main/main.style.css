@@ -1,0 +1,12 @@
+#MainPage {
+    background-color: rosybrown;
+    min-height: 80vh;
+}
+
+#MainPage > div {
+    justify-content: space-around;
+}
+
+#MainPage > div > * {
+    min-width: 30%;
+}

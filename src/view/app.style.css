@@ -1,0 +1,27 @@
+.text {
+    word-wrap: break-word;
+    max-width: 100%;
+    word-break: break-all;
+}
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+button {
+    border: 0 solid black;
+    border-radius: 1rem;
+}
+
+input {
+    border-radius: 1rem;
+    border: 1 solid black;
+}

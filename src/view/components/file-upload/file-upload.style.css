@@ -1,0 +1,30 @@
+#file-uploud {
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    justify-content: space-between;
+}
+
+#file-upload-header {
+    justify-content: center;
+    text-align: center;
+}
+
+#file-uploud > .flex-row-container {
+    padding: 0.2rem;
+    justify-content: space-between;
+}
+
+/*  */
+
+#file-upload-input-file-metadata {
+    resize: none;
+    overflow: scroll;
+}
+
+#file-upload-input-file-metadata::-webkit-scrollbar {
+    width: 0px;
+}

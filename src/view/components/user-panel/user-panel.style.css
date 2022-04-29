@@ -1,0 +1,20 @@
+#user-management {    
+    border: 1px solid black;
+    border-radius: 1rem;
+
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#user-management-header {
+    justify-content: center;
+    text-align: center;
+}
+
+#user-management-input-private input {
+    flex: 3 0 auto;
+}
+
+#user-management-input-private button {
+    flex: 1 0 auto;
+}
