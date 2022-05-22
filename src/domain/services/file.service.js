@@ -1,6 +1,5 @@
 'use strict';
 
-import {uint8toHex} from '../../infrastructure/crypto/helpers';
 import * as crypto from 'crypto-js';
 
 export class FileServiceError extends Error {}

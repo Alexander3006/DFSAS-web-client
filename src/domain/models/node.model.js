@@ -14,6 +14,7 @@ export class NodeModel {
     this.http = http;
     this.version = version;
     this.address = address;
+    this.status = status;
   }
 
   static fromRaw(raw) {

@@ -21,7 +21,7 @@ export class FileRepository extends EE {
     return newFileModel;
   }
 
-  delete({id}) {
+  delete({id} = {}) {
     const {memory} = this;
     !!id ? memory.delete(id) : memory.clear();
     this.emit(EVENTS.UPDATE, [...memory.values()]);

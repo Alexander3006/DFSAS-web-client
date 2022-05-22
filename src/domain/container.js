@@ -6,6 +6,7 @@ import {UserRepository} from '../infrastructure/storage/user.repository';
 import {SignatureService} from '../infrastructure/crypto/signature.service';
 
 import {HttpApiClient} from '../infrastructure/node-client/http-api.client';
+import {WsApiClient} from '../infrastructure/node-client/ws-api.client';
 
 import {AccountService} from '../domain/services/account.service';
 import {FileService} from './services/file.service';
@@ -20,6 +21,7 @@ const signatureService = new SignatureService();
 
 //api
 const httpApiClient = new HttpApiClient({signatureService});
+const wsApiClient = new WsApiClient({signatureService, httpApiClient});
 
 //Domain dervices
 const accountService = new AccountService({userRepository, signatureService});
@@ -33,6 +35,7 @@ export const container = {
   signatureService,
 
   httpApiClient,
+  wsApiClient,
 
   accountService,
   fileService,
